@@ -52,7 +52,7 @@ async def main() -> None:
         print(f"Agent: {response}")
         # To review the code interpreter outputs, you can access
         # them from the response raw_representations, just uncomment the next line:
-        # print_code_interpreter_inputs(response)
+        print_code_interpreter_inputs(response)
 
 
 if __name__ == "__main__":

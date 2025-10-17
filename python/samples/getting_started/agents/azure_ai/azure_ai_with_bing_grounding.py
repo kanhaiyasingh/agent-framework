@@ -6,6 +6,10 @@ from agent_framework import ChatAgent, HostedWebSearchTool
 from agent_framework_azure_ai import AzureAIAgentClient
 from azure.identity.aio import AzureCliCredential
 
+# Load environment variables from .env file if present
+from dotenv import load_dotenv
+load_dotenv()
+
 """
 The following sample demonstrates how to create an Azure AI agent that
 uses Bing Grounding search to find real-time information from the web.

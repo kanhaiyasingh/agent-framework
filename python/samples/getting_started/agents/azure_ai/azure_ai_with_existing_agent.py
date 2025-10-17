@@ -8,6 +8,10 @@ from agent_framework.azure import AzureAIAgentClient
 from azure.ai.projects.aio import AIProjectClient
 from azure.identity.aio import AzureCliCredential
 
+
+# Load environment variables from .env file if present
+from dotenv import load_dotenv
+load_dotenv()
 """
 Azure AI Agent with Existing Agent Example
 
